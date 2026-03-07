@@ -1,0 +1,24 @@
+form{
+    color:brown ; background-color: antiquewhite;
+}
+table{
+    color: black;
+}
+button{
+    color: blue;background-color: azure;
+}
+input{
+    color: blueviolet;background-color: wheat;
+}
+label{
+    color:violet;
+}
+tr{
+    color:chocolate;background-color: bisque;
+}
+td{
+    color:tomato;
+}
+textarea{
+    background-color:blanchedalmond;
+}
