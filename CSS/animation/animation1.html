@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            background-color: gold;
+            animation-name: colorchanging;
+            animation-duration: 5s;
+        }
+        /*@keyframes colorchanging{
+            from{
+                background-color: gold;
+            }
+            to{
+                background-color: deeppink;
+            }
+        }*/
+        @keyframes colorchanging{
+            0%{
+                background-color: gold;
+            }
+            25%{
+                background-color: red;
+            }
+            50%{
+                background-color: green;
+            }
+            75%{
+                background-color: blue;
+            }
+            100%{
+                background-color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
