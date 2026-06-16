@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Solar System</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: black;
+      background-image: url("https://img.freepik.com/premium-photo/stars-galaxy-outer-space-sky-night-universe-black-starry-background-shiny-starfield_146539-338.jpg");
+      background-size:contain;
+      background-position: center;
+    }
+
+    .solar-system {
+      position: relative;
+      width: 750px;
+      height: 750px;
+    }
+    .sun {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKyRo4vpaz1Lrt7GVYXKaXqd41BPoL_Q7juw&s");
+      background-size: cover;
+      background-position: center;
+    }
+    .circle {
+      position: absolute;
+      border: 1px solid grey;
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: rotate linear infinite;
+    }
+    .planet {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left:-10px;
+      transform: translateY(-50%);
+    }
+    .mercury {
+      width: 160px;
+      height: 160px;
+      animation-duration: 2s;
+    }
+    .mercury .planet { 
+         height:30px;
+        width:30px;
+        background: gray;
+     }
+
+    .venus {
+      width: 220px;
+      height: 220px;
+      animation-duration: 4s;
+    }
+    .venus .planet {
+         height:30px;
+        width:30px;
+         background: gold;
+         }
+
+    .earth {
+      width: 280px;
+      height: 280px;
+      animation-duration: 6s;
+    }
+    .earth .planet {
+        height:30px;
+        width:30px; 
+        background: deepskyblue; 
+    }
+
+    .mars {
+      width: 340px;
+      height: 340px;
+      animation-duration: 8s;
+    }
+    .mars .planet { 
+        height:30px;
+        width:30px;
+        background: red;
+     }
+
+    .jupiter {
+      width: 420px;
+      height: 420px;
+      animation-duration: 10s;
+    }
+    .jupiter .planet {
+        height:30px;
+        width:30px;
+        background-image:url("https://cdn.esahubble.org/archives/images/screen/heic1914a.jpg"); 
+        background-size:cover;
+        background-color: transparent;
+         
+    }
+    .saturn {
+      width: 500px;
+      height: 500px;
+      animation-duration: 12s;
+    }
+    .saturn .planet { 
+      background: burlywood;
+     }
+    .uranus {
+      width: 580px;
+      height: 580px;
+      animation-duration: 14s;
+    }
+    .uranus .planet { 
+      background: lightblue; 
+    }
+    .neptune {
+      width: 660px;
+      height: 660px;
+      animation-duration: 16s;
+    }
+    .neptune .planet { 
+      background: blue;
+     }
+    @keyframes rotate {
+      100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="solar-system">
+
+    <div class="sun"></div>
+
+    <div class="circle mercury">
+      <div class="planet"></div>
+    </div>
+
+    <div class="circle venus">
+      <div class="planet"></div>
+    </div>
+
+    <div class="circle earth">
+      <div class="planet"></div>
+    </div>
+
+    <div class="circle mars">
+      <div class="planet"></div>
+    </div>
+
+    <div class="circle jupiter">
+      <div class="planet"></div>
+    </div>
+
+    <div class="circle saturn">
+      <div class="planet"></div>
+    </div>
+
+    <div class="circle uranus">
+      <div class="planet"></div>
+    </div>
+
+    <div class="circle neptune">
+      <div class="planet"></div>
+    </div>
+
+  </div>
+
+</body>
+</html>

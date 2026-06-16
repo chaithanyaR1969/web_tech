@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            height: 200px;
+            width: 200px;
+            position:relative;
+            border: 2px solid black;
+            background-color: gold;
+            animation-name: movingbox;
+            animation-duration: 5s;
+            animation-timing-function: ease-in;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+        /*@keyframes colorchanging{
+            from{
+                background-color: gold;
+            }
+            to{
+                background-color: deeppink;
+            }
+        }*/
+       @keyframes movingbox {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+        background-color: gold;
+    }
+    25% {
+        transform: translate(200px, 0) rotate(90deg);
+        background-color: red;
+    }
+    50% {
+        transform: translate(200px, 200px) rotate(180deg);
+        background-color: green;
+    }
+    75% {
+        transform: translate(0, 200px) rotate(270deg);
+        background-color: blue;
+    }
+    100% {
+        transform: translate(0, 0) rotate(360deg);
+        background-color: white;
+    }
+}
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
